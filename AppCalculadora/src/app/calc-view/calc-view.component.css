@@ -1,0 +1,31 @@
+.container {
+    border: 1px solid #000;
+    padding: 25px;
+    width: 26em;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  
+  
+  

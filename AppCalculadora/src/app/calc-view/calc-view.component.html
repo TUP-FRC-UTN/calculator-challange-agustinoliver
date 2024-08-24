@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="calculadora">
+    <h1>Calculadora</h1>
+    <div class="mb-3">
+      <label for="numero1" class="form-label">Valor Uno:</label>
+      <input type="number" class="form-control" id="numero1" placeholder="Ingrese el primer valor" [value]="valor1" (input)="setNumero1($event)">
+    </div>
+    <div class="mb-3">
+      <label for="numero2" class="form-label">Valor Dos:</label>
+      <input type="number" class="form-control" id="numero2" placeholder="Ingrese el segundo valor" [value]="valor2" (input)="setNumero2($event)">
+    </div>
+    <div class="mb-3">
+      <label for="resultado" class="form-label">Resultado: </label>
+      <input type="text" class="form-control" id="resultado" placeholder="Resultado" readonly [value]="resultado ?? ''">
+    </div>
+    <app-calc-actions (resultadoEvent)="setResultado($event)" [valorUno]="valor1" [valorDos]="valor2" (borrarEvent)="borrar()" (aleatorioEvent)="setAleatorios($event)"></app-calc-actions>
+  </div>
+</div>
